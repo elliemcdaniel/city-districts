@@ -2,11 +2,11 @@
 const map = L.map('map').setView([28.5383, -81.3792], 12); // Centered on Orlando
 
 // Add OpenStreetMap tile layer
-L.tileLayer('https://stamen-tiles.a.ssl.fastly.net/toner-lite/{z}/{x}/{y}.png', {
-  attribution: 'Map tiles by Stamen Design, CC BY 3.0 — Map data © OpenStreetMap',
-  subdomains: 'abcd',
-  maxZoom: 20
+L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
+  attribution: '&copy; OpenStreetMap & CartoDB',
+  subdomains: 'abcd'
 }).addTo(map);
+
 
 
 // Load GeoJSON
